@@ -1,0 +1,7 @@
+const { body } = require('express-validator');
+
+let validation = body('age').notEmpty().withMessage('is Required!');
+
+module.exports = {
+    validation
+}
